@@ -52,15 +52,4 @@ public class HomePage extends AbstractPage {
         getElement(moreButton).click();
         waitForElementVisible(By.xpath(dataSheet));
     }
-
-    public boolean isDetailsOpened() {
-        scrollPage();
-        return getElement(dataSheet).isDisplayed();
-    }
-
-    public void clickDetailsBtn() {
-        waitForElementClickable(By.xpath(itemCard));
-        getElement(itemCard).click();
-        waitForElementVisible(By.xpath(dataSheet));
-    }
 }

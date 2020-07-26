@@ -55,13 +55,4 @@ public class HomeHelper extends AbstractHelper {
         AbstractPage.waitForElementClickable(By.xpath(moreButton));
         homePage.clickMoreBtn();
     }
-
-    public void openDetailsOfItemFromHomePage() {
-        scrollPage();
-        homePage.clickDetailsBtn();
-    }
-
-    public boolean isDetailsOpened() {
-        return homePage.isDetailsOpened();
-    }
 }

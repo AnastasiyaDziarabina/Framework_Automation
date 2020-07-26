@@ -66,16 +66,6 @@ public class TestWithItem {
         Assert.assertTrue(isPriceCorrect, "Price is not correct.");
     }
 
-    @Test
-    @Description(value = "Open details of item from home page")
-    @Severity(SeverityLevel.NORMAL)
-    public void checkOpeningItemDetailsFromHomePage() {
-        homeHelper.openHomePage();
-        homeHelper.openDetailsOfItemFromHomePage();
-        boolean isDetailsOpened = homeHelper.isDetailsOpened();
-        Assert.assertTrue(isDetailsOpened, "Details of item is not opened.");
-    }
-
     @AfterClass
     public void tearDown() {
         homeHelper.quit();
