@@ -7,7 +7,10 @@
     <groupId>com.stormnet</groupId>
     <artifactId>automation_framework</artifactId>
     <version>1.0</version>
-
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    </properties>
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
@@ -81,7 +84,7 @@
                 </configuration>
             </plugin>
 
-            <!-- Compiler plugin configures the java version to be usedfor compiling
+            <!-- Compiler plugin configures the java version to be used for compiling
             the code -->
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
